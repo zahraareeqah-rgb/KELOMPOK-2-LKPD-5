@@ -1,0 +1,8 @@
+ARIEF DWI RIZKI
+Issue yang saya kerjakan:Issue 5,6
+Branch saya: feature/navbar dan feature/footer
+Commit yang saya buat:"menambahkan file ke branch footer" dan "Menambahkan file ke branch navbar"
+Perubahan utama yang saya lakukan: Menambahkan kode struktur HTML dan CSS untuk tampilan navigasi atas (navbar) serta bagian bawah (footer) website kelas.
+Kesulitan saya: Sempat mengalami kendala saat melakukan push karena konfigurasi akun Git yang tertukar dengan akun lain
+Cara saya menyelesaikan masalah: Mengubah konfigurasi identitas Git di terminal (user.name dan user.email) serta mengecek ulang riwayat commit dan push ke branch yang bersangkutan
+Apa yang saya pelajari tentang kerja tim developer: Memahami pentingnya penggunaan branch terpisah untuk setiap fitur agar pekerjaan tidak saling bentrok, serta cara berkolaborasi menggunakan Pull Request dan commit history 
