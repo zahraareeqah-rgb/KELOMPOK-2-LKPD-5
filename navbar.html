@@ -1,0 +1,48 @@
+<style>
+    .site-nav {
+        background-color: #ffffff;
+        padding: 15px 30px;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        font-family: 'Inter', system-ui, sans-serif;
+    }
+
+    .nav-brand {
+        font-weight: 700;
+        font-size: 1.2rem;
+        color: #0284c7;
+        text-decoration: none;
+    }
+
+    .nav-links {
+        display: flex;
+        gap: 20px;
+        list-style: none;
+    }
+
+    .nav-links a {
+        text-decoration: none;
+        color: #334155;
+        font-weight: 500;
+        transition: color 0.2s;
+    }
+
+    .nav-links a:hover {
+        color: #0284c7;
+    }
+</style>
+
+<nav class="site-nav">
+    <a href="index.html" class="nav-brand">XI RPL</a>
+    <ul class="nav-links">
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="profil.html">Profil</a></li>
+        <li><a href="anggota.html">Anggota</a></li>
+        <li><a href="kontak.html">Kontak</a></li>
+    </ul>
+</nav>

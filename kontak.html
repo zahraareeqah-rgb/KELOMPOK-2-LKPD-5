@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontak - Website Kelas XI RPL</title>
+    <style>
+        /* Styling Sinkron Clean Blue Theme */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+        }
+
+        body {
+            background-color: #f0f4f8;
+            color: #334155;
+            line-height: 1.7;
+        }
+
+        header {
+            background: linear-gradient(135deg, #0284c7 0%, #0369a1 100%);
+            color: white;
+            text-align: center;
+            padding: 70px 20px;
+            border-bottom: 4px solid #38bdf8;
+        }
+
+        header h1 {
+            font-size: 2.4rem;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            color: #e0f2fe;
+            font-weight: 300;
+        }
+
+        .container {
+            max-width: 850px;
+            margin: 30px auto 60px auto;
+            padding: 0 20px;
+        }
+
+        .contact-card {
+            background: #ffffff;
+            padding: 40px;
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+            border: 1px solid #e2e8f0;
+            margin-bottom: 30px;
+        }
+
+        .contact-card h3 {
+            font-size: 1.4rem;
+            color: #0f172a;
+            margin-bottom: 15px;
+            border-left: 4px solid #0284c7;
+            padding-left: 10px;
+        }
+
+        .contact-info {
+            margin-bottom: 25px;
+            color: #475569;
+            font-size: 1.05rem;
+        }
+
+        .contact-info p {
+            margin-bottom: 8px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            font-weight: 600;
+            color: #1e293b;
+            margin-bottom: 6px;
+        }
+
+        .form-group input, .form-group textarea {
+            width: 100%;
+            padding: 12px 15px;
+            border: 1px solid #cbd5e1;
+            border-radius: 8px;
+            font-size: 1rem;
+            outline: none;
+            transition: border-color 0.3s;
+        }
+
+        .form-group input:focus, .form-group textarea:focus {
+            border-color: #0284c7;
+            box-shadow: 0 0 0 3px rgba(2, 132, 199, 0.15);
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 25px;
+            background-color: #0284c7;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 0.95rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 12px rgba(2, 132, 199, 0.25);
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: #0369a1;
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Wadah Navbar Otomatis -->
+    <div id="navbar-container"></div>
+
+    <!-- Header Kontak -->
+    <header>
+        <h1>Kontak Kami</h1>
+        <p>Hubungi atau kirimkan pesan kepada pengurus kelas XI RPL.</p>
+    </header>
+
+    <div class="container">
+        <div class="contact-card">
+            <!-- Informasi Media Sosial & Email -->
+            <div class="contact-info">
+                <h3>Informasi & Lokasi</h3>
+                <p>📧 <strong>Email:</strong> ariiazzahra@gmail.com</p>
+                <p>📱 <strong>Instagram:</strong> @elevnperfectones</p>
+                <p>🏫 <strong>Alamat:</strong> Ruang Kelas XI RPL, Gedung Kejuruan Lantai 2 SMKN 1 Garut</p>
+            </div>
+
+            <hr style="border: none; border-top: 1px solid #e2e8f0; margin: 25px 0;">
+
+            <!-- Formulir Pesan -->
+            <h3>Open Quotes </h3>
+            <form onsubmit="event.preventDefault(); 
+                let nama = document.getElementById('nama').value; 
+                alert('Terima kasih sudah berkunjung, ' + nama + '! Ingat pesan ini\n\n“Technology is best when it brings people together.” — Matt Mullenweg');">
+                <div class="form-group">
+                    <label for="nama">Nama Pengunjung</label>
+                    <input type="text" id="nama" placeholder="Masukkan nama kamu..." required>
+                </div>
+                <button type="submit" class="btn">Kirim Pesan</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Wadah Footer Otomatis -->
+    <div id="footer-container"></div>
+
+    <!-- Script Pemanggil Navbar & Footer -->
+    <script>
+        // Memuat Navbar
+        fetch('navbar.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('navbar-container').innerHTML = data;
+            })
+            .catch(error => console.error('Gagal memuat navbar:', error));
+
+        // Memuat Footer
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-container').innerHTML = data;
+            })
+            .catch(error => console.error('Gagal memuat footer:', error));
+    </script>
+
+</body>
+</html>
