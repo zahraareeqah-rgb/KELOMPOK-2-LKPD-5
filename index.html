@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Website Kelas XI RPL</title>
+    <style>
+        /* Styling Modern & Clean Blue Theme */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+        }
+
+        body {
+            background-color: #f0f4f8;
+            color: #334155;
+            line-height: 1.7;
+        }
+
+        header {
+            background: linear-gradient(135deg, #0284c7 0%, #0369a1 100%);
+            color: white;
+            text-align: center;
+            padding: 90px 20px;
+            border-bottom: 4px solid #38bdf8;
+        }
+
+        header h1 {
+            font-size: 2.6rem;
+            font-weight: 700;
+            margin-bottom: 12px;
+            letter-spacing: -0.5px;
+        }
+
+        header p {
+            font-size: 1.15rem;
+            color: #e0f2fe;
+            max-width: 600px;
+            margin: 0 auto;
+            font-weight: 300;
+        }
+
+        .container {
+            max-width: 850px;
+            margin: -40px auto 60px auto;
+            padding: 0 20px;
+            text-align: center;
+            position: relative;
+        }
+
+        .banner-img {
+            width: 100%;
+            height: 380px;
+            object-fit: cover;
+            border-radius: 16px;
+            box-shadow: 0 15px 35px rgba(2, 132, 199, 0.12);
+            margin-bottom: 35px;
+            border: 4px solid #ffffff;
+        }
+
+        .welcome-text {
+            background: #ffffff;
+            padding: 40px;
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+            margin-bottom: 35px;
+            border: 1px solid #e2e8f0;
+            text-align: left;
+        }
+
+        .welcome-text h2 {
+            font-size: 1.8rem;
+            color: #0f172a;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+
+        .welcome-text p {
+            color: #475569;
+            font-size: 1.05rem;
+        }
+
+        .btn-group {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 14px 28px;
+            background-color: #0284c7;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 0.95rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 12px rgba(2, 132, 199, 0.25);
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: #0369a1;
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Wadah Navbar Otomatis -->
+    <div id="navbar-container"></div>
+
+    <!-- Header / Sambutan Utama -->
+    <header>
+        <h1>Selamat Datang di Website Kelas XI RPL</h1>
+        <p>Eksplorasi kreativitas, kode, dan kebersamaan keluarga besar rekayasa perangkat lunak.</p>
+    </header>
+
+    <div class="container">
+        <!-- Banner / Gambar Ilustrasi -->
+        <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=1200&q=80" alt="Suasana Coding Kelas" class="banner-img">
+
+        <!-- Kotak Teks Penjelasan -->
+        <div class="welcome-text">
+            <h2>Tentang Kebersamaan Kami</h2>
+            <p>Halo semuanya! Di kelas XI RPL ini, kita tidak cuma belajar tentang syntax pemrograman atau database saja, tapi kita juga membangun kerja sama tim yang kuat. Website ini adalah salah satu bukti proyek kolaborasi hebat kita!</p>
+        </div>
+
+        <!-- Tombol Aksi (Tombol navigasi bawah sudah dihapus, tinggal fitur sapa) -->
+        <div class="btn-group">
+            <button class="btn" onclick="sapaPengunjung()">👋 Sapa Kami</button>
+        </div>
+    </div>
+
+    <!-- Script JavaScript & Pemanggil Navbar -->
+    <script>
+        function sapaPengunjung() {
+            alert("Halo! Selamat datang di website resmi kelas XI RPL. Semoga harimu menyenangkan!");
+        }
+
+        // Memanggil file navbar.html secara dinamis
+        fetch('navbar.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('navbar-container').innerHTML = data;
+            })
+            .catch(error => console.error('Gagal memuat navbar:', error));
+    </script>
+
+    <div id="footer-container"></div>
+
+    <!-- Script Pemanggil Navbar & Footer -->
+    <script>
+        // Memuat Navbar
+        fetch('navbar.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('navbar-container').innerHTML = data;
+            })
+            .catch(error => console.error('Gagal memuat navbar:', error));
+
+        // Memuat Footer
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-container').innerHTML = data;
+            })
+            .catch(error => console.error('Gagal memuat footer:', error));
+    </script>
+</body>
+</html>
