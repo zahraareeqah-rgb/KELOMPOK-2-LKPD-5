@@ -1,2 +1,26 @@
           Refleksi Individu
-Issue yang saya kerjakan: menyelesaikan tampilan profil kelas, perbaikan foto
+1. Issue yang saya kerjakan: 
+          menyelesaikan tampilan profil kelas, perbaikan foto, issue pada halaman home dan profil
+2. Branch Saya: 
+          fitur profil, fitur home
+3. Commit yang saya buat:
+          git commit -m "feat(home): membuat struktur HTML dasar halaman home" (Commit pertama saat membuat kerangka HTML halaman Home)
+          git commit -m "style(home): menambahkan styling CSS dan tata letak responsif untuk halaman home" (Commit kedua untuk mempercantik tampilan Home)   
+          git commit -m "feat(profil): menambahkan markup HTML isi kelas, wali kelas, visi, dan misi" (Commit ketiga saat mulai mengerjakan halaman Profil)   
+          git commit -m "style(profil): menambahkan styling CSS dan penataan foto kelas pada halaman profil" (Commit keempat untuk menyelesaikan tampilan halaman Profil)
+          git commit -m "fix: memperbaiki bug kecil pada layout responsif navbar dan footer di halaman home serta profil" (Commit tambahan untuk perbaikan/revisi akhir)
+4. Perubahan utama yang saya lakukan: 
+          Membuat file HTML dan CSS untuk halaman Home (sambutan dan informasi utama website kelas).
+          Membuat file HTML dan CSS untuk halaman Profil (isi nama kelas, wali kelas, visi, misi, dan foto kelas).  
+          Membantu memantau GitHub Issues dan memanage pembagian tugas anggota tim.
+5. Kesulitan saya:
+          Sempat kayak sedikit kebingungan saat mengatur tata letak (layout) CSS agar halaman Home dan Profil terlihat responsif di berbagai ukuran layar.
+          Terus harus membagi waktu antara mengatur tugas tim sebagai Project Manager dan menyelesaikan kodingan halaman sendiri.
+                    tapi semua sudah diperbaiki pelrahan lahan
+6. Cara saya mengatasi masalah:
+          Mencari referensi desain layout sederhana dan berdiskusi dengan anggota tim (reviewer/tester) untuk mendapatkan masukan tampilan terbaik.
+          Cari tau lebih banyak terkait tugas ini ke AI
+          Mengatur pemabgian tugas manajemen proyek dan koding halaman Home serta Profildan yang lainnya dapat selesai
+7. Apa yang saya pelajari tentang kerja tim developer
+          Saya belajar bahwa ternyata kolaborasi menggunakan GitHub (Issues, Branch, Pull Request, dan Code Review) sangat penting agar pekerjaan tidak saling bentrok dan kode lebih terstruktur.
+          Selain itu, peran seorang Project Manager juga menuntut komunikasi yang jelas agar semua anggota tim paham tugas masing-masing.
