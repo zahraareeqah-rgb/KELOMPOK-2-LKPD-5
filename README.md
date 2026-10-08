@@ -4,6 +4,10 @@ Anggota:  Areeqah
           Septi
           Nessa
 
+          Memahami Issue:
+Apa fungsi GitHUb Issue:
+
+
           Refleksi Tim:
 Sebelum menggunakan GitHub Issues:Pembagian tugas dan pelacakan bug atau fitur masih dilakukan secara manual (misalnya lewat chat grup), sehingga terkadang ada tugas yang terlewat atau tumpang tindih antar anggota tim.
 
