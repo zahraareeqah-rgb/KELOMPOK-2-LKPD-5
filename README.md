@@ -5,7 +5,14 @@ Anggota:  Areeqah
           Nessa
 
           Memahami Issue:
-Apa fungsi GitHUb Issue:
+Apa fungsi GitHUb Issue?
+issue yang terdapat pada github seperti fungsi notes to-do-list yaitu mencatat seluruh proses workflow yang akan kita kerjakan, selain itu dapat memberi tau dan melaporkan apabila ada kerusakan pada code pada projek yang sedang dikerjakan
+
+Mengapa pekerjaan sebaiknya dicatat sebagai Issue?
+Agar workflow/alur kerja projek yang kita kerjakan lebih terstruktur, lebih mudah dikelola, selain itu anggota yang mengerjakan pun dapat melihat langsung real progres yang sedang berlangsung karena di track oleh issue
+
+Apa Perbedaan Issue dengan Commit?
+Perbedaan nya, Issue itu untuk mentracking atau mencatat to-do-list alur pekerjaan dan sedangkan commit adalah 
 
 
           Refleksi Tim:
