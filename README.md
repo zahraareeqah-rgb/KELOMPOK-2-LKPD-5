@@ -12,7 +12,7 @@ Mengapa pekerjaan sebaiknya dicatat sebagai Issue?
 Agar workflow/alur kerja projek yang kita kerjakan lebih terstruktur, lebih mudah dikelola, selain itu anggota yang mengerjakan pun dapat melihat langsung real progres yang sedang berlangsung karena di track oleh issue
 
 Apa Perbedaan Issue dengan Commit?
-Perbedaan nya, Issue itu untuk mentracking atau mencatat to-do-list alur pekerjaan dan sedangkan commit adalah 
+Perbedaan nya, Issue itu untuk mentracking atau mencatat to-do-list alur pekerjaan dan sedangkan commit adalah tracking nyata prakteksasinya seperti perintah git untuk menghubungkan code pada wadah projek yang nanti akan di merge d branch main dari gabungan branch dan projek masing masing individu 
 
 
           Refleksi Tim:
