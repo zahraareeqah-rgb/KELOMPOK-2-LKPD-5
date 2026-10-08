@@ -1,8 +1,9 @@
-Website Profil Kelas XI RPL
-Anggota:  Areeqah
-          Arief
-          Septi
-          Nessa
+Website Profil Kelas XI RPL 1
+          Anggota:  
+-Areeqah
+-Arief
+-Septi
+-Nessa
 
           Memahami Issue:
 Apa fungsi GitHUb Issue?
